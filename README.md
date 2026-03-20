@@ -31,7 +31,7 @@ The goal of this project is to migrate existing patches to Morphe and keep them 
 &nbsp;
 ### Features
 
-#### Google News
+<h3>📰 Google News</h3>
 
 | Patch | Description |
 |---|---|
