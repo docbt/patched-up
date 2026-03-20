@@ -1,6 +1,21 @@
+<div align="center">
+
 # docbt-patched-up
 
-Revived and updated patches for [Morphe](https://morphe.software).
+**Revived and updated patches for Morphe. Community-driven. GPL-compliant.**
+
+<br>
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Built for Morphe](https://img.shields.io/badge/Built%20for-Morphe-1E5AA8?style=flat-square)](https://morphe.software)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.x-7F52FF?style=flat-square&logo=kotlin)](https://kotlinlang.org)
+[![Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android)](https://android.com)
+[![Gradle](https://img.shields.io/badge/Gradle-8.x-02303A?style=flat-square&logo=gradle)](https://gradle.org)
+[![Patches](https://img.shields.io/badge/Patches-1%20App-success?style=flat-square)](#supported-apps--patches)
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/docbt)
+
+</div>
 
 &nbsp;
 ## About
