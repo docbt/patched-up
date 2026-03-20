@@ -3,7 +3,7 @@ group = "app.docbt.patched_up"
 patches {
     about {
         name = "docbt-patched-up"
-        description = "Revived and updated patches for the Morphe Patcher. First Release: Google News / Magazines"
+        description = "Revived and updated patches for Morphe. First Release: Google News / Magazines"
         source = "https://github.com/docbt/docbt-patched-up"
         author = "docbt"
         contact = "https://github.com/docbt/docbt-patched-up/issues"
