@@ -68,9 +68,8 @@ The goal of this project is to migrate missing ReVanced patches to Morphe and ke
 4. Select your app and apply the patches:
 
    **4a. Google News**
-   - **Change package name** *(from the Morphe Patches repository — required)*
-   - **Enable CustomTabs** *(this repository)*
-   - **GmsCore Support** *(this repository)*
+   - **Enable CustomTabs** *(this repository — applies package rename automatically)*
+   - **GmsCore Support** *(this repository — applies package rename automatically)*
 
    **4b. Kleinanzeigen**
    - **Change package name** *(from the Morphe Patches repository — optional, prevent Google Play from updating)*
