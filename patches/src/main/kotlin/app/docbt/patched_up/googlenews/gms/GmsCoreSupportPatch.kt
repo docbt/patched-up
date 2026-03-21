@@ -1,5 +1,6 @@
 package app.docbt.patched_up.googlenews.gms
 
+import app.docbt.patched_up.all.misc.packagename.changePackageNamePatch
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.bytecodePatch
@@ -314,6 +315,8 @@ val gmsCoreSupportPatch = bytecodePatch(
             "when installed under a renamed package.",
 ) {
     dependsOn(gmsCoreSupportResourcePatch)
+
+    dependsOn(changePackageNamePatch)
 
     compatibleWith("com.google.android.apps.magazines" to setOf("5.154.0.880997081"))
 
