@@ -64,7 +64,7 @@ The goal of this project is to migrate existing patches to Morphe and keep them 
 2. In Morphe Manager, add this repository as a patch source:
    **https://github.com/docbt/patched-up**
    Or use the quick-add link: **https://morphe.software/add-source?github=docbt/patched-up**
-3. In Morphe Manager settings, enable **Expert Mode**
+3. In Morphe Manager settings, enable **Expert Mode** to select patches individually
 4. Select your app and apply the patches:
 
    **4a. Google News**
