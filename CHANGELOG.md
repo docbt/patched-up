@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/docbt/patched-up/compare/v1.0.1...v1.0.2) (2026-03-21)
+
+
+### Bug Fixes
+
+* correct patches-bundle.json to point to stable v1.0.1 release ([6194cdb](https://github.com/docbt/patched-up/commit/6194cdb1764a854514b7bc1fd4691f64f314af0f))
+
 # [1.0.0-dev.2](https://github.com/docbt/patched-up/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-03-21)
 
 
