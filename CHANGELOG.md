@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/docbt/patched-up/compare/v1.2.2...v1.2.3) (2026-03-21)
+
+
+### Bug Fixes
+
+* correct attribution for Change package name to ReVanced as original source ([c887215](https://github.com/docbt/patched-up/commit/c8872152d99e288046e0ecf774d3baa937138e62))
+
 ## [1.2.2](https://github.com/docbt/patched-up/compare/v1.2.1...v1.2.2) (2026-03-21)
 
 
