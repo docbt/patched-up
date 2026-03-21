@@ -65,10 +65,16 @@ The goal of this project is to migrate existing patches to Morphe and keep them 
    **https://github.com/docbt/patched-up**
    Or use the quick-add link: **https://morphe.software/add-source?github=docbt/patched-up**
 3. In Morphe Manager settings, enable **Expert Mode**
-4. Select Google News and apply the following patches:
+4. Select your app and apply the patches:
+
+   **4a. Google News**
    - **Change package name** *(from the Morphe Patches repository — required)*
    - **Enable CustomTabs** *(this repository)*
    - **GmsCore Support** *(this repository)*
+
+   **4b. Kleinanzeigen**
+   - **Hide Ads** *(this repository)*
+   - **Hide Pur** *(this repository)*
 
 &nbsp;
 ## Contributing
