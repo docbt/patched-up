@@ -2,17 +2,17 @@
 
 ## Resources
 
-* [Issues](https://github.com/docbt/docbt-patched-up/issues) — bug reports and feature requests
+* [Issues](https://github.com/docbt/patched-up/issues) — bug reports and feature requests
 
 ## Submitting a feature request
 
 Open an issue using the
-[Feature request template](https://github.com/docbt/docbt-patched-up/issues/new?labels=Feature+request&template=feature_request.yml&title=feat%3A+).
+[Feature request template](https://github.com/docbt/patched-up/issues/new?labels=Feature+request&template=feature_request.yml&title=feat%3A+).
 
 ## Submitting a bug report
 
 Open an issue using the
-[Bug report template](https://github.com/docbt/docbt-patched-up/issues/new?labels=Bug+report&template=bug_report.yml&title=bug%3A+).
+[Bug report template](https://github.com/docbt/patched-up/issues/new?labels=Bug+report&template=bug_report.yml&title=bug%3A+).
 
 ## How to contribute
 

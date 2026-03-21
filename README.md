@@ -50,8 +50,8 @@ The goal of this project is to migrate existing patches to Morphe and keep them 
 
 1. Install **Morphe Manager** and set up **MicroG** following the [Morphe MicroG guide](https://morphe.software/microg)
 2. In Morphe Manager, add this repository as a patch source:
-   **https://github.com/docbt/docbt-patched-up**
-   Or use the quick-add link: **https://morphe.software/add-source?github=docbt/docbt-patched-up**
+   **https://github.com/docbt/patched-up**
+   Or use the quick-add link: **https://morphe.software/add-source?github=docbt/patched-up**
 3. Select Google News and apply the following patches:
    - **Change package name** *(from the Morphe Patches repository — required)*
    - **Enable CustomTabs** *(this repository)*
