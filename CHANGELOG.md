@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/docbt/patched-up/compare/v1.0.2...v1.1.0) (2026-03-21)
+
+
+### Features
+
+* **kleinanzeigen:** add Hide Ads and Hide Pur patches migrated from ReVanced ([ffb2a99](https://github.com/docbt/patched-up/commit/ffb2a999e0b83e038431b9951e3225a4f93588e0))
+
 ## [1.0.2](https://github.com/docbt/patched-up/compare/v1.0.1...v1.0.2) (2026-03-21)
 
 
