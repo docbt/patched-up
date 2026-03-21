@@ -1,5 +1,5 @@
-// Ported from https://github.com/hoo-dles/morphe-patches (GPL v3)
-// Original author: hoo-dles
+// Original source: https://github.com/ReVanced/revanced-patches (GPL v3)
+// Ported via https://github.com/hoo-dles/morphe-patches
 package app.docbt.patched_up.all.misc.packagename
 
 import app.morphe.patcher.patch.Option

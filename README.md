@@ -95,10 +95,9 @@ Contributions are welcome. Please read the [contribution guidelines](CONTRIBUTIN
 &nbsp;
 ## Credits
 
-- [ReVanced](https://github.com/ReVanced/revanced-patches) — Original patches (GPL v3)
+- [ReVanced](https://github.com/ReVanced/revanced-patches) — Original patches including `Change package name` (GPL v3)
 - [Morphe](https://morphe.software) — Patcher framework and ecosystem
 - [MicroG GmsCore](https://github.com/microg/GmsCore) — Open-source replacement for Google Play Services
-- [hoo-dles/morphe-patches](https://github.com/hoo-dles/morphe-patches) — `Change package name` patch ported from this repository (GPL v3)
 
 &nbsp;
 ## License
@@ -107,6 +106,6 @@ This project is licensed under the [GNU General Public License v3.0](LICENSE), w
 
 - **Attribution (7b):** The author **"docbt"** and original authorship must be preserved in all derivative works and forks. The notice in the [NOTICE](NOTICE) file may not be removed or altered.
 - **Name Restriction (7c):** The name **"Morphe"** may not be used for derivative works. Derivatives must adopt a distinct identity unrelated to "Morphe."
-- **Third-party attribution:** The `Change package name` patch is ported from [hoo-dles/morphe-patches](https://github.com/hoo-dles/morphe-patches), which itself is based on [ReVanced/revanced-patches](https://github.com/ReVanced/revanced-patches). Both are licensed under GPL v3.
+- **Third-party attribution:** The `Change package name` patch originates from [ReVanced/revanced-patches](https://github.com/ReVanced/revanced-patches) (GPL v3), ported via [hoo-dles/morphe-patches](https://github.com/hoo-dles/morphe-patches).
 
 See the [NOTICE](NOTICE) file for full Section 7 conditions.
