@@ -106,6 +106,5 @@ This project is licensed under the [GNU General Public License v3.0](LICENSE), w
 
 - **Attribution (7b):** The author **"docbt"** and original authorship must be preserved in all derivative works and forks. The notice in the [NOTICE](NOTICE) file may not be removed or altered.
 - **Name Restriction (7c):** The name **"Morphe"** may not be used for derivative works. Derivatives must adopt a distinct identity unrelated to "Morphe."
-- **Third-party attribution:** The `Change package name` patch originates from [ReVanced/revanced-patches](https://github.com/ReVanced/revanced-patches) (GPL v3), ported via [hoo-dles/morphe-patches](https://github.com/hoo-dles/morphe-patches).
 
 See the [NOTICE](NOTICE) file for full Section 7 conditions.
