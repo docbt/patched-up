@@ -4,10 +4,10 @@ patches {
     about {
         name = "Patched-Up"
         description = "Revived and updated ReVanced patches for Morphe."
-        source = "https://github.com/docbt/docbt-patched-up"
+        source = "https://github.com/docbt/patched-up"
         author = "docbt"
-        contact = "https://github.com/docbt/docbt-patched-up/issues"
-        website = "https://github.com/docbt/docbt-patched-up"
+        contact = "https://github.com/docbt/patched-up/issues"
+        website = "https://github.com/docbt/patched-up"
         license = "GPLv3"
     }
 }
