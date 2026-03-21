@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/docbt/patched-up/compare/v1.2.1...v1.2.2) (2026-03-21)
+
+
+### Bug Fixes
+
+* revert ChangePackageNamePatch to hoo-dles version, update attribution ([8ea5307](https://github.com/docbt/patched-up/commit/8ea5307f7104c9e418c39b7bb2c0c72fcf6da606))
+
 ## [1.2.1](https://github.com/docbt/patched-up/compare/v1.2.0...v1.2.1) (2026-03-21)
 
 
