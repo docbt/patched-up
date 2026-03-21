@@ -11,7 +11,7 @@
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.x-7F52FF?style=flat-square&logo=kotlin)](https://kotlinlang.org)
 [![Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android)](https://android.com)
 [![Gradle](https://img.shields.io/badge/Gradle-8.x-02303A?style=flat-square&logo=gradle)](https://gradle.org)
-[![Patches](https://img.shields.io/badge/Patches-1%20App-success?style=flat-square)](#supported-apps--patches)
+[![Patches](https://img.shields.io/badge/Patches-2%20Apps-success?style=flat-square)](#supported-apps--patches)
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/docbt)
 
@@ -26,7 +26,12 @@ The goal of this project is to migrate existing patches to Morphe and keep them 
 
 | App | Package | Version | Patches |
 |---|---|---|---|
-| Google News | `com.google.android.apps.magazines` | [![Google News](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fdocbt%2Fdocbt-patched-up%2Fmain%2Fversions.json&query=%24.googleNews&label=&color=blue&style=flat-square)](versions.json) | Custom Tabs, GMS Support |
+| Google News 🎯🌎 | `com.google.android.apps.magazines` | [![Google News](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fdocbt%2Fpatched-up%2Fmain%2Fversions.json&query=%24.googleNews&label=&color=blue&style=flat-square)](versions.json) | Custom Tabs, GMS Support |
+| Kleinanzeigen | `com.ebay.kleinanzeigen` | all | Hide Ads, Hide Pur |
+
+> 🌎 Supports MicroG integration.
+>
+> 🎯 This app has a strict requirement to use the version defined in the patch.
 
 &nbsp;
 ### Features
@@ -38,13 +43,20 @@ The goal of this project is to migrate existing patches to Morphe and keep them 
 | 🪄 Custom Tabs | Opens news articles in your default browser, so you can use your ad blocker and browser extensions. |
 | ⚙️ GMS Support | Enables Google sign-in via [MicroG GmsCore](https://github.com/microg/GmsCore) — a free and open-source replacement for Google Play Services. |
 
+<h3>📦 Kleinanzeigen</h3>
+
+| Patch | Description |
+|---|---|
+| 🚫 Hide Ads | Hides sponsored ads and Google Ads. Also disables Microsoft Clarity analytics. |
+| 🔕 Hide Pur | Hides the Pur ad-free subscription option from the settings menu. |
+
 &nbsp;
 ## How to use
 
 ### Requirements
 
 - [Morphe Manager](https://github.com/MorpheApp/morphe-manager) — the app used to apply patches
-- [MicroG GmsCore](https://morphe.software/microg) — required for Google sign-in (replaces Google Play Services)
+- [MicroG GmsCore](https://morphe.software/microg) — required for apps that use Google Play Services (e.g. Google sign-in)
 
 ### Steps
 
@@ -52,7 +64,8 @@ The goal of this project is to migrate existing patches to Morphe and keep them 
 2. In Morphe Manager, add this repository as a patch source:
    **https://github.com/docbt/patched-up**
    Or use the quick-add link: **https://morphe.software/add-source?github=docbt/patched-up**
-3. Select Google News and apply the following patches:
+3. In Morphe Manager settings, enable **Expert Mode**
+4. Select Google News and apply the following patches:
    - **Change package name** *(from the Morphe Patches repository — required)*
    - **Enable CustomTabs** *(this repository)*
    - **GmsCore Support** *(this repository)*
