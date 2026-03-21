@@ -29,6 +29,7 @@ The goal of this project is to migrate existing patches to Morphe and keep them 
 | Google News 🎯🌎 | `com.google.android.apps.magazines` | [![Google News](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fdocbt%2Fpatched-up%2Fmain%2Fversions.json&query=%24.googleNews&label=&color=blue&style=flat-square)](versions.json) | Custom Tabs, GMS Support |
 
 > 🌎 Supports MicroG integration.
+>
 > 🎯 This app has a strict requirement to use the version defined in the patch.
 
 &nbsp;
