@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/docbt/patched-up/compare/v1.2.4...v1.3.0) (2026-03-21)
+
+
+### Features
+
+* add Kleinanzeigen version to versions.json with dynamic badge in README ([4a6a922](https://github.com/docbt/patched-up/commit/4a6a922ed3f2b8faad97db48cd4c3d15487cbd80))
+
 ## [1.2.4](https://github.com/docbt/patched-up/compare/v1.2.3...v1.2.4) (2026-03-21)
 
 

@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-03-21T12:59:11",
-  "description": "## [1.2.4](https://github.com/docbt/patched-up/compare/v1.2.3...v1.2.4) (2026-03-21)\n\n\n### Bug Fixes\n\n* restrict Kleinanzeigen patches to version 2016.9.0 ([8fe9e13](https://github.com/docbt/patched-up/commit/8fe9e13c08aeab5e4b23e026f9ae85dc9f2ac745))",
-  "download_url": "https://github.com/docbt/patched-up/releases/download/v1.2.4/patches-1.2.4.mpp",
-  "signature_download_url": "https://github.com/docbt/patched-up/releases/download/v1.2.4/patches-1.2.4.mpp.asc",
-  "version": "1.2.4"
+  "created_at": "2026-03-21T13:01:18",
+  "description": "# [1.3.0](https://github.com/docbt/patched-up/compare/v1.2.4...v1.3.0) (2026-03-21)\n\n\n### Features\n\n* add Kleinanzeigen version to versions.json with dynamic badge in README ([4a6a922](https://github.com/docbt/patched-up/commit/4a6a922ed3f2b8faad97db48cd4c3d15487cbd80))",
+  "download_url": "https://github.com/docbt/patched-up/releases/download/v1.3.0/patches-1.3.0.mpp",
+  "signature_download_url": "https://github.com/docbt/patched-up/releases/download/v1.3.0/patches-1.3.0.mpp.asc",
+  "version": "1.3.0"
 }
