@@ -68,11 +68,12 @@ The goal of this project is to migrate existing patches to Morphe and keep them 
 4. Select your app and apply the patches:
 
    **4a. Google News**
-   - **Change package name** *(from the Morphe Patches repository — optional)*
+   - **Change package name** *(from the Morphe Patches repository — required)*
    - **Enable CustomTabs** *(this repository)*
    - **GmsCore Support** *(this repository)*
 
    **4b. Kleinanzeigen**
+   - **Change package name** *(from the Morphe Patches repository — optional, prevent Google Play from updating)*
    - **Hide Ads** *(this repository)*
    - **Hide Pur** *(this repository)*
 
