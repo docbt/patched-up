@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/docbt/patched-up/compare/v1.3.2...v1.3.3) (2026-03-31)
+
+
+### Bug Fixes
+
+* **changelog:** remove duplicate v1.3.2 entry ([9c556b7](https://github.com/docbt/patched-up/commit/9c556b79c1426dcf819ed0ae9d2fa52e34cf44f7))
+
 ## [1.3.2](https://github.com/docbt/patched-up/compare/v1.3.1...v1.3.2) (2026-03-31)
 
 
