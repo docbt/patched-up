@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/docbt/patched-up/compare/v1.3.4...v1.3.5) (2026-04-03)
+
+
+### Bug Fixes
+
+* **googlenews:** correct all IGET_BOOLEAN fingerprints for 5.155.0 ([426243b](https://github.com/docbt/patched-up/commit/426243b0df80b5689c4dc7c4c565a8bba81f6c2c))
+
 ## [1.3.4](https://github.com/docbt/patched-up/compare/v1.3.3...v1.3.4) (2026-04-03)
 
 
