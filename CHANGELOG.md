@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/docbt/patched-up/compare/v1.3.3...v1.3.4) (2026-04-03)
+
+
+### Bug Fixes
+
+* **googlenews:** update fingerprints for 5.155.0.885456612 ([7e3ed22](https://github.com/docbt/patched-up/commit/7e3ed228060ee46a5e00c1e386313802f91405ab))
+
 ## [1.3.3](https://github.com/docbt/patched-up/compare/v1.3.2...v1.3.3) (2026-03-31)
 
 
