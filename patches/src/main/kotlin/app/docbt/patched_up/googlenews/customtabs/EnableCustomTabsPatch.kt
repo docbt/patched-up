@@ -15,7 +15,7 @@ val enableCustomTabsPatch = bytecodePatch(
 ) {
     dependsOn(changePackageNamePatch)
 
-    compatibleWith("com.google.android.apps.magazines" to setOf("5.155.0.885456612"))
+    compatibleWith("com.google.android.apps.magazines" to setOf("5.155.0.885456612", "5.155.0.892577434"))
 
     execute {
         with(InstructionExtensions) {

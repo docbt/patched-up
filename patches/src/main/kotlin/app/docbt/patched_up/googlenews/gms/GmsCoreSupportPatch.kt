@@ -314,7 +314,7 @@ val gmsCoreSupportPatch = bytecodePatch(
 
     dependsOn(changePackageNamePatch)
 
-    compatibleWith("com.google.android.apps.magazines" to setOf("5.155.0.885456612"))
+    compatibleWith("com.google.android.apps.magazines" to setOf("5.155.0.885456612", "5.155.0.892577434"))
 
     execute {
         // region 1 — Transform all GMS string references: com.google.* → app.revanced.*
