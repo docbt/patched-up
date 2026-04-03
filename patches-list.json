@@ -48,7 +48,7 @@
       ],
       "compatiblePackages": {
         "com.google.android.apps.magazines": [
-          "5.155.0.885456612"
+          "5.155.0.885456612", "5.155.0.892577434"
         ]
       },
       "options": []
@@ -63,7 +63,7 @@
       ],
       "compatiblePackages": {
         "com.google.android.apps.magazines": [
-          "5.155.0.885456612"
+          "5.155.0.885456612", "5.155.0.892577434"
         ]
       },
       "options": []
@@ -75,7 +75,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.ebay.kleinanzeigen": [
-          "2026.14.0"
+          "2026.14.0", "2026.14.2"
         ]
       },
       "options": []
@@ -87,7 +87,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.ebay.kleinanzeigen": [
-          "2026.14.0"
+          "2026.14.0", "2026.14.2"
         ]
       },
       "options": []
