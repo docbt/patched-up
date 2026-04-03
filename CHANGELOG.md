@@ -1,3 +1,16 @@
+# [1.4.0](https://github.com/docbt/patched-up/compare/v1.3.5...v1.4.0) (2026-04-03)
+
+
+### Bug Fixes
+
+* remove deprecated use parameter (morphe-patcher 1.3.1)  ([e2867fc](https://github.com/docbt/patched-up/commit/e2867fca349085bd6eda0fcf1d32c92ad1c0ea18)), closes [#2EAD33](https://github.com/docbt/patched-up/issues/2EAD33) [#4285F4](https://github.com/docbt/patched-up/issues/4285F4)
+* use 0xRRGGBB Int format for appIconColor (string rejected by Compatibility) ([714562d](https://github.com/docbt/patched-up/commit/714562dd8440753b57a9e90b33c7c0b436c74fb3))
+
+
+### Features
+
+* trigger release v1.4.0 ([35d1707](https://github.com/docbt/patched-up/commit/35d17070e89bd6679a45cb8747fefa7e22c0729e))
+
 ## [1.3.5](https://github.com/docbt/patched-up/compare/v1.3.4...v1.3.5) (2026-04-03)
 
 
