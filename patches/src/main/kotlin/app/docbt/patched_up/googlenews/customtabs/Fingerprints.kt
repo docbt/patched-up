@@ -7,15 +7,17 @@ import com.android.tools.smali.dexlib2.Opcode
 // All methods in Google News v5.155.0 that read Ladwy;->j:Z (iget-boolean).
 // Ladwy = CustomTabsArticleLauncher; field j controls CustomTabs (true) vs WebView (false).
 //
-// Verified read sites:
-//   classes.dex:  Lajbx (click handler, method b)          [~70]
-//   classes3.dex: Ladyo (ReadNow handler, method a)        [~29]
-//                 Laiyf (navigator, method a)               [~60]
-//                 CustomTabsTrampolineActivity (onCreate)   [~73]
+// Verified read sites (DEX bytecode scan):
+//   classes.dex:  Laixy  (StartActivity, access$1301)      [1039, 1674]
+//   classes3.dex: Ladyo  (ReadNow handler, <init>)          [27]
+//                 Laiyf  (navigator, method a)               [30]
+//                 Lajbr  (click handler, <init>)             [127]
+//                 Lajby  (click handler, <init>)             [51]
+//                 CustomTabsTrampolineActivity (onCreate)    [52]
 
 internal object LajdkFingerprint : Fingerprint(
     filters = listOf(fieldAccess("Ladwy;", "j", "Z", Opcode.IGET_BOOLEAN)),
-    custom = { _, classDef -> classDef.type == "Lajbx;" },
+    custom = { _, classDef -> classDef.type == "Laixy;" },
 )
 
 internal object LaedzFingerprint : Fingerprint(
@@ -30,12 +32,12 @@ internal object LajdrFingerprint : Fingerprint(
 
 internal object LajgzFingerprint : Fingerprint(
     filters = listOf(fieldAccess("Ladwy;", "j", "Z", Opcode.IGET_BOOLEAN)),
-    custom = { _, classDef -> classDef.type == "Lajgz;" },
+    custom = { _, classDef -> classDef.type == "Lajbr;" },
 )
 
 internal object LajhkFingerprint : Fingerprint(
     filters = listOf(fieldAccess("Ladwy;", "j", "Z", Opcode.IGET_BOOLEAN)),
-    custom = { _, classDef -> classDef.type == "Lajhk;" },
+    custom = { _, classDef -> classDef.type == "Lajby;" },
 )
 
 // CustomTabsTrampolineActivity.onCreate() reads Ladwy.j; if j==0 it logs
