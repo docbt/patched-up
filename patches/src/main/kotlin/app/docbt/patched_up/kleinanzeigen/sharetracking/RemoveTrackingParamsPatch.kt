@@ -43,15 +43,15 @@ val removeTrackingParamsPatch = bytecodePatch(
             // Each addInstruction(index, ...) inserts at `index`, pushing previous
             // insertions down — so we add them in reverse order of desired execution.
             method.addInstruction(index, "move-result-object v$reg")
-            method.addInstruction(index, "invoke-virtual {v$reg}, Landroid/net/Uri;.toString:()Ljava/lang/String;")
+            method.addInstruction(index, "invoke-virtual {v$reg}, Landroid/net/Uri;->toString:()Ljava/lang/String;")
             method.addInstruction(index, "move-result-object v$reg")
-            method.addInstruction(index, "invoke-virtual {v$reg}, Landroid/net/Uri\$Builder;.build:()Landroid/net/Uri;")
+            method.addInstruction(index, "invoke-virtual {v$reg}, Landroid/net/Uri\$Builder;->build:()Landroid/net/Uri;")
             method.addInstruction(index, "move-result-object v$reg")
-            method.addInstruction(index, "invoke-virtual {v$reg}, Landroid/net/Uri\$Builder;.clearQuery:()Landroid/net/Uri\$Builder;")
+            method.addInstruction(index, "invoke-virtual {v$reg}, Landroid/net/Uri\$Builder;->clearQuery:()Landroid/net/Uri\$Builder;")
             method.addInstruction(index, "move-result-object v$reg")
-            method.addInstruction(index, "invoke-virtual {v$reg}, Landroid/net/Uri;.buildUpon:()Landroid/net/Uri\$Builder;")
+            method.addInstruction(index, "invoke-virtual {v$reg}, Landroid/net/Uri;->buildUpon:()Landroid/net/Uri\$Builder;")
             method.addInstruction(index, "move-result-object v$reg")
-            method.addInstruction(index, "invoke-static {v$reg}, Landroid/net/Uri;.parse:(Ljava/lang/String;)Landroid/net/Uri;")
+            method.addInstruction(index, "invoke-static {v$reg}, Landroid/net/Uri;->parse:(Ljava/lang/String;)Landroid/net/Uri;")
         }
     }
 }
