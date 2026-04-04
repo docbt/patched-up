@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/docbt/patched-up/compare/v1.4.0...v1.5.0) (2026-04-04)
+
+
+### Features
+
+* **kleinanzeigen:** NEW PATCH: remove UTM tracking params from share URLs ([b684461](https://github.com/docbt/patched-up/commit/b684461992532ace281201dfee5c63e21bba9b15))
+
 # [1.4.0](https://github.com/docbt/patched-up/compare/v1.3.5...v1.4.0) (2026-04-03)
 
 
