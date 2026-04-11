@@ -15,6 +15,7 @@ private val COMPAT = Compatibility(
     packageName = "com.google.android.apps.magazines",
     appIconColor = 0x4285F4,
     targets = listOf(
+        AppTarget(version = "5.156.0.892791979"),
         AppTarget(version = "5.155.0.892577434"),
         AppTarget(version = "5.155.0.885456612"),
     ),
@@ -78,7 +79,7 @@ val enableCustomTabsPatch = bytecodePatch(
                 for (instr in method.implementation!!.instructions) {
                     if (instr.opcode == Opcode.IGET_BOOLEAN) {
                         val ref = (instr as ReferenceInstruction).reference
-                        if (ref is FieldReference && ref.definingClass == "Ladwy;" && ref.name == "j") {
+                        if (ref is FieldReference && ref.definingClass == "Laebh;" && ref.name == "i") {
                             targets.add(index)
                         }
                     }
