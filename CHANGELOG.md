@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/docbt/patched-up/compare/v1.6.0...v1.6.1) (2026-04-11)
+
+
+### Bug Fixes
+
+* **googlenews:** drop v5.155 compatibility, v5.156 only ([45def7d](https://github.com/docbt/patched-up/commit/45def7dfedd5fb4f1eebe59c7bb0e30347ecf939))
+
 # [1.6.0](https://github.com/docbt/patched-up/compare/v1.5.0...v1.6.0) (2026-04-11)
 
 

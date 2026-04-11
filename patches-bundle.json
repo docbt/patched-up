@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-11T01:57:34",
-  "description": "# [1.6.0](https://github.com/docbt/patched-up/compare/v1.5.0...v1.6.0) (2026-04-11)\n\n\n### Features\n\n* **googlenews:** add support for Google News v5.156 ([2bf1417](https://github.com/docbt/patched-up/commit/2bf1417cf2fcafe22af7e59cb58fcb1dc0682553))",
-  "download_url": "https://github.com/docbt/patched-up/releases/download/v1.6.0/patches-1.6.0.mpp",
-  "signature_download_url": "https://github.com/docbt/patched-up/releases/download/v1.6.0/patches-1.6.0.mpp.asc",
-  "version": "1.6.0"
+  "created_at": "2026-04-11T02:05:00",
+  "description": "## [1.6.1](https://github.com/docbt/patched-up/compare/v1.6.0...v1.6.1) (2026-04-11)\n\n\n### Bug Fixes\n\n* **googlenews:** drop v5.155 compatibility, v5.156 only ([45def7d](https://github.com/docbt/patched-up/commit/45def7dfedd5fb4f1eebe59c7bb0e30347ecf939))",
+  "download_url": "https://github.com/docbt/patched-up/releases/download/v1.6.1/patches-1.6.1.mpp",
+  "signature_download_url": "https://github.com/docbt/patched-up/releases/download/v1.6.1/patches-1.6.1.mpp.asc",
+  "version": "1.6.1"
 }

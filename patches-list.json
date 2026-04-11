@@ -1,5 +1,5 @@
 {
-  "version": "1.6.0",
+  "version": "1.6.1",
   "patches": [
     {
       "name": "Change package name",
@@ -48,9 +48,7 @@
       ],
       "compatiblePackages": {
         "com.google.android.apps.magazines": [
-          "5.156.0.892791979",
-          "5.155.0.892577434",
-          "5.155.0.885456612"
+          "5.156.0.892791979"
         ]
       },
       "options": []
@@ -65,9 +63,7 @@
       ],
       "compatiblePackages": {
         "com.google.android.apps.magazines": [
-          "5.156.0.892791979",
-          "5.155.0.892577434",
-          "5.155.0.885456612"
+          "5.156.0.892791979"
         ]
       },
       "options": []
