@@ -1,3 +1,24 @@
+## [1.6.1](https://github.com/docbt/patched-up/compare/v1.6.0...v1.6.1) (2026-04-11)
+
+
+### Bug Fixes
+
+* **googlenews:** drop v5.155 compatibility, v5.156 only ([45def7d](https://github.com/docbt/patched-up/commit/45def7dfedd5fb4f1eebe59c7bb0e30347ecf939))
+
+# [1.6.0](https://github.com/docbt/patched-up/compare/v1.5.0...v1.6.0) (2026-04-11)
+
+
+### Features
+
+* **googlenews:** add support for Google News v5.156 ([2bf1417](https://github.com/docbt/patched-up/commit/2bf1417cf2fcafe22af7e59cb58fcb1dc0682553))
+
+# [1.5.0](https://github.com/docbt/patched-up/compare/v1.4.0...v1.5.0) (2026-04-04)
+
+
+### Features
+
+* **kleinanzeigen:** NEW PATCH: remove UTM tracking params from share URLs ([b684461](https://github.com/docbt/patched-up/commit/b684461992532ace281201dfee5c63e21bba9b15))
+
 # [1.4.0](https://github.com/docbt/patched-up/compare/v1.3.5...v1.4.0) (2026-04-03)
 
 

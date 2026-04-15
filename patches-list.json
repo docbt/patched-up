@@ -1,5 +1,5 @@
 {
-  "version": "1.4.0",
+  "version": "1.6.1",
   "patches": [
     {
       "name": "Change package name",
@@ -48,8 +48,7 @@
       ],
       "compatiblePackages": {
         "com.google.android.apps.magazines": [
-          "5.155.0.892577434",
-          "5.155.0.885456612"
+          "5.156.0.892791979"
         ]
       },
       "options": []
@@ -64,8 +63,7 @@
       ],
       "compatiblePackages": {
         "com.google.android.apps.magazines": [
-          "5.155.0.892577434",
-          "5.155.0.885456612"
+          "5.156.0.892791979"
         ]
       },
       "options": []
@@ -86,6 +84,19 @@
     {
       "name": "Hide ads",
       "description": "Hides sponsored ads and Google Ads. Also disables Microsoft Clarity analytics.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.ebay.kleinanzeigen": [
+          "2026.14.2",
+          "2026.14.0"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Remove tracking parameters from share URLs",
+      "description": "Strips UTM tracking parameters from URLs shared via the in-app share function.",
       "use": true,
       "dependencies": [],
       "compatiblePackages": {
