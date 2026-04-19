@@ -75,6 +75,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.ebay.kleinanzeigen": [
+          "2026.16.1",
           "2026.14.2",
           "2026.14.0"
         ]
@@ -88,6 +89,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.ebay.kleinanzeigen": [
+          "2026.16.1",
           "2026.14.2",
           "2026.14.0"
         ]
@@ -101,6 +103,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.ebay.kleinanzeigen": [
+          "2026.16.1",
           "2026.14.2",
           "2026.14.0"
         ]
