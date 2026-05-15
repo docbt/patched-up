@@ -4,73 +4,73 @@ import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.fieldAccess
 import com.android.tools.smali.dexlib2.Opcode
 
-// All methods in Google News v5.156.0 that read Laebh;->i:Z (iget-boolean).
-// Laebh = CustomTabsArticleLauncher; field i controls CustomTabs (true) vs WebView (false).
+// All methods in Google News v5.158.0 that read Ladpx;->i:Z (iget-boolean).
+// Ladpx = CustomTabsArticleLauncher; field i controls CustomTabs (true) vs WebView (false).
 //
 // Verified read sites (DEX bytecode scan):
-//   classes.dex:  Lajev  (StartActivity handler)
-//   classes3.dex: Lajii  (handler)
-//                 Lajfc  (handler)
-//                 Lajir  (handler)
-//                 Laecx  (handler)
+//   classes.dex:  Laiud  (StartActivity handler)
+//   classes3.dex: Ladrm  (handler)
+//                 Laiuk  (handler)
+//                 Laixq  (handler)
+//                 Laixz  (handler)
 //                 CustomTabsTrampolineActivity (onCreate)
 
 internal object LajdkFingerprint : Fingerprint(
-    filters = listOf(fieldAccess("Laebh;", "i", "Z", Opcode.IGET_BOOLEAN)),
-    custom = { _, classDef -> classDef.type == "Lajev;" },
+    filters = listOf(fieldAccess("Ladpx;", "i", "Z", Opcode.IGET_BOOLEAN)),
+    custom = { _, classDef -> classDef.type == "Laiud;" },
 )
 
 internal object LaedzFingerprint : Fingerprint(
-    filters = listOf(fieldAccess("Laebh;", "i", "Z", Opcode.IGET_BOOLEAN)),
-    custom = { _, classDef -> classDef.type == "Lajii;" },
+    filters = listOf(fieldAccess("Ladpx;", "i", "Z", Opcode.IGET_BOOLEAN)),
+    custom = { _, classDef -> classDef.type == "Ladrm;" },
 )
 
 internal object LajdrFingerprint : Fingerprint(
-    filters = listOf(fieldAccess("Laebh;", "i", "Z", Opcode.IGET_BOOLEAN)),
-    custom = { _, classDef -> classDef.type == "Lajfc;" },
+    filters = listOf(fieldAccess("Ladpx;", "i", "Z", Opcode.IGET_BOOLEAN)),
+    custom = { _, classDef -> classDef.type == "Laiuk;" },
 )
 
 internal object LajgzFingerprint : Fingerprint(
-    filters = listOf(fieldAccess("Laebh;", "i", "Z", Opcode.IGET_BOOLEAN)),
-    custom = { _, classDef -> classDef.type == "Lajir;" },
+    filters = listOf(fieldAccess("Ladpx;", "i", "Z", Opcode.IGET_BOOLEAN)),
+    custom = { _, classDef -> classDef.type == "Laixq;" },
 )
 
 internal object LajhkFingerprint : Fingerprint(
-    filters = listOf(fieldAccess("Laebh;", "i", "Z", Opcode.IGET_BOOLEAN)),
-    custom = { _, classDef -> classDef.type == "Laecx;" },
+    filters = listOf(fieldAccess("Ladpx;", "i", "Z", Opcode.IGET_BOOLEAN)),
+    custom = { _, classDef -> classDef.type == "Laixz;" },
 )
 
-// CustomTabsTrampolineActivity.onCreate() reads Laebh.i; if i==0 it logs
+// CustomTabsTrampolineActivity.onCreate() reads Ladpx.i; if i==0 it logs
 // "Unexpected intent; activity is not enabled" and finishes. Patch i-read to always true.
 internal object CustomTabsTrampolineFingerprint : Fingerprint(
-    filters = listOf(fieldAccess("Laebh;", "i", "Z", Opcode.IGET_BOOLEAN)),
+    filters = listOf(fieldAccess("Ladpx;", "i", "Z", Opcode.IGET_BOOLEAN)),
     custom = { _, classDef ->
         classDef.type == "Lcom/google/apps/dots/android/modules/reading/customtabs/CustomTabsTrampolineActivity;"
     },
 )
 
-// aebp.b() returns a Laebq implementation based on experiment flag Laqps.a.get().f().
-// When the experiment is OFF, IF_EQZ branches to the null-returning Laebq,
-// which causes Laebh.k=null → Laebh.b() fails → CustomTabs never binds.
-// Patching the IF_EQZ to NOP forces the always-enabled Laebq path (returns real browser pkg).
+// Ladqf.b() returns a Ladqg implementation based on experiment flag Laqhh.a.get().
+// When the experiment is OFF, IF_EQZ branches to the disabled Ladqi (filters all browsers
+// against an allowlist, returns null if none match), causing Ladpx.c=null → binding failure.
+// Patching the IF_EQZ to NOP forces the enabled Ladql path (picks browser via resolveActivity).
 internal object LaecrFingerprint : Fingerprint(
-    filters = listOf(fieldAccess("Laqps;", "a", "Laqps;", Opcode.SGET_OBJECT)),
-    custom = { _, classDef -> classDef.type == "Laebp;" },
+    filters = listOf(fieldAccess("Laqhh;", "a", "Laqhh;", Opcode.SGET_OBJECT)),
+    custom = { _, classDef -> classDef.type == "Ladqf;" },
 )
 
-// Laebs.a() — "disabled" Laebq: filters all installed browsers against an experiment allowlist,
-// returns null if none match. IF_EQZ at [15] returns null when the filtered list is empty.
-// NOP-ing it forces the fallback fa.a() call which picks the default browser via resolveActivity.
+// Ladqi.a() — "disabled" Ladqg: filters installed browsers against an experiment allowlist,
+// returns null if none match. IF_EQZ returns null when the filtered list is empty.
+// NOP-ing it forces the fallback resolveActivity call which picks the default browser.
 internal object LaecuFingerprint : Fingerprint(
-    filters = listOf(fieldAccess("Laebs;", "a", "Landroid/content/Context;", Opcode.IGET_OBJECT)),
-    custom = { _, classDef -> classDef.type == "Laebs;" },
+    filters = listOf(fieldAccess("Ladqi;", "a", "Landroid/content/Context;", Opcode.IGET_OBJECT)),
+    custom = { _, classDef -> classDef.type == "Ladqi;" },
 )
 
-// Laebv.a() — "enabled" Laebq: picks the best CT-supporting browser via fa.a(), then checks
-// if it's in the experiment allowlist. IF_EQZ at [27] redirects to allowlist-only path when
-// the default browser isn't allowlisted (e.g. Firefox/Brave). NOP-ing it always returns
-// whatever fa.a() found (default browser has priority via resolveActivity).
+// Ladql.a() — "enabled" Ladqg: picks the best CT-supporting browser via resolveActivity,
+// then checks if it's in the experiment allowlist. IF_EQZ redirects to allowlist-only path
+// when the default browser isn't allowlisted (e.g. Firefox/Brave). NOP-ing it always returns
+// whatever resolveActivity found (default browser has priority).
 internal object LaecxFingerprint : Fingerprint(
-    filters = listOf(fieldAccess("Laebv;", "a", "Landroid/content/Context;", Opcode.IGET_OBJECT)),
-    custom = { _, classDef -> classDef.type == "Laebv;" },
+    filters = listOf(fieldAccess("Ladql;", "a", "Landroid/content/Context;", Opcode.IGET_OBJECT)),
+    custom = { _, classDef -> classDef.type == "Ladql;" },
 )
