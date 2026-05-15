@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/docbt/patched-up/compare/v1.7.0...v1.8.0) (2026-05-15)
+
+
+### Features
+
+* **googlenews:** add support for version 5.158.0.908428942 ([9c87106](https://github.com/docbt/patched-up/commit/9c8710631adeea43fca0c70cad8106cf49311e53))
+* **googlenews:** support v5.158.0.908428942 with updated CustomTabs fingerprints ([5f413e0](https://github.com/docbt/patched-up/commit/5f413e0f7ebbb728dcf59d4e0114c4bbcd181e82))
+
 # [1.7.0](https://github.com/docbt/patched-up/compare/v1.6.1...v1.7.0) (2026-04-19)
 
 
