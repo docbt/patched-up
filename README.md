@@ -49,9 +49,9 @@ The goal of this project is to migrate missing ReVanced patches to Morphe and ke
 > GMS/MicroG sign-in does **not** work on a fresh install of the latest patched version. You must first sign in on an older patched version, then update.
 >
 > **Workaround:**
-> 1. Download [Release v1.6.0](https://github.com/docbt/patched-up/releases/tag/v1.6.0) (the `.mpp` file)
-> 2. In Morphe Manager, add the v1.6.0 `.mpp` as a **local patch source**
-> 3. Patch **Google News v5.156.0.892791979** with the v1.6.0 patches and install it
+> 1. Download [Release v1.3.4](https://github.com/docbt/patched-up/releases/tag/v1.3.4) (the `.mpp` file)
+> 2. In Morphe Manager, add the v1.3.4 `.mpp` as a **local patch source**
+> 3. Patch **Google News v5.155.0.885456612** with the v1.3.4 patches and install it
 > 4. Open the patched app and **sign in to your Google account**
 > 5. Now switch back to the **latest release** as patch source and patch the **latest supported Google News version**
 > 6. Install the new patched APK as an **update** over the old one — your login will be preserved
