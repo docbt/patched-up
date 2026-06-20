@@ -1,3 +1,16 @@
+# [1.9.0](https://github.com/docbt/patched-up/compare/v1.8.0...v1.9.0) (2026-06-20)
+
+
+### Features
+
+* **googlenews:** add support for version 5.161.0.931240252 ([2419a42](https://github.com/docbt/patched-up/commit/2419a429b05c49f0fb86815abcb20a4c88e04b0b))
+* **googlenews:** restore CustomTabs support for v5.161.0 with corrected patch approach ([#37](https://github.com/docbt/patched-up/issues/37)) ([125ec13](https://github.com/docbt/patched-up/commit/125ec13af3a0f20561790496b8d2500d75b47114))
+
+
+### Reverts
+
+* **googlenews:** drop broken CustomTabs support for v5.161.0.931240252 ([9596ae5](https://github.com/docbt/patched-up/commit/9596ae54486f02f85734683bb3e5d0db5341beb2))
+
 # [1.8.0](https://github.com/docbt/patched-up/compare/v1.7.0...v1.8.0) (2026-05-15)
 
 
