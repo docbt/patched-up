@@ -44,6 +44,18 @@ The goal of this project is to migrate missing ReVanced patches to Morphe and ke
 | 🪄 Custom Tabs | Opens news articles in your default browser, so you can use your ad blocker and browser extensions. |
 | ⚙️ GMS Support | Enables Google sign-in via [MicroG GmsCore](https://github.com/microg/GmsCore) — a free and open-source replacement for Google Play Services. |
 
+> **⚠️ Known Issue: Google Sign-In on Fresh Install**
+>
+> GMS/MicroG sign-in does **not** work on a fresh install of the latest patched version. You must first sign in on an older patched version, then update.
+>
+> **Workaround:**
+> 1. Download [Release v1.6.0](https://github.com/docbt/patched-up/releases/tag/v1.6.0) (the `.mpp` file)
+> 2. In Morphe Manager, add the v1.6.0 `.mpp` as a **local patch source**
+> 3. Patch **Google News v5.156.0.892791979** with the v1.6.0 patches and install it
+> 4. Open the patched app and **sign in to your Google account**
+> 5. Now switch back to the **latest release** as patch source and patch the **latest supported Google News version**
+> 6. Install the new patched APK as an **update** over the old one — your login will be preserved
+
 <h3>📦 Kleinanzeigen</h3>
 
 | Patch | Description |
