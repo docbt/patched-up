@@ -110,7 +110,13 @@ private val ACTIONS = setOf(
     "com.google.android.gms.asterism.service.START",
     "com.google.android.gms.audiomodem.service.AudioModemService.START",
     "com.google.android.gms.audit.service.START",
-    "com.google.android.gms.auth.aang.events.services.START",
+    // NOTE: com.google.android.gms.auth.aang.events.services.START is deliberately
+    // NOT transformed. The AANG events service (bound via getStartServiceAction() in
+    // the aang auth client) has no counterpart in MicroG RE, so rewriting it to
+    // "app.revanced.*" points the bind at a non-existent service and breaks the
+    // fresh-install account-add return flow (sign-in loops after login). Leaving it
+    // as "com.google.*" restores the behaviour of the first working releases.
+    // See regression from commit 7342da2.
     "com.google.android.gms.auth.account.authapi.START",
     "com.google.android.gms.auth.account.authenticator.auto.service.START",
     "com.google.android.gms.auth.account.authenticator.chromeos.START",
