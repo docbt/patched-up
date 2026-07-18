@@ -27,3 +27,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./gradlew :patches:buildAndroid --no-daemon
+
+      - name: Upload patch artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: patches-pr
+          path: patches/build/libs/patches-*.mpp
+          retention-days: 7
