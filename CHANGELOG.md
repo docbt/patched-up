@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/docbt/patched-up/compare/v1.9.0...v1.10.0) (2026-07-18)
+
+
+### Features
+
+* **googlenews:** support v5.163.0.947799485 and fix fresh-install sign-in loop ([3cd524a](https://github.com/docbt/patched-up/commit/3cd524a947a094114c8f0d0ea5be154935010fa3)), closes [#44](https://github.com/docbt/patched-up/issues/44)
+
 # [1.9.0](https://github.com/docbt/patched-up/compare/v1.8.0...v1.9.0) (2026-06-20)
 
 
