@@ -23,6 +23,7 @@ private val COMPAT = Compatibility(
     packageName = FROM_PACKAGE,
     appIconColor = 0x4285F4,
     targets = listOf(
+        AppTarget(version = "5.163.0.947799485"),
         AppTarget(version = "5.161.0.931240252"),
         AppTarget(version = "5.158.0.908428942"),
         AppTarget(version = "5.156.0.892791979"),
