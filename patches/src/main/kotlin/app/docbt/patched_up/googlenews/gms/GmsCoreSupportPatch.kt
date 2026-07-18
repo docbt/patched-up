@@ -30,8 +30,12 @@ private val COMPAT = Compatibility(
     ),
 )
 
-// SHA-1 of Google's release signing certificate (shared across Google apps).
-private const val SPOOFED_PACKAGE_SIGNATURE = "24bb24c05e47e0aefa68a58a766179d9b613a600"
+// SHA-1 of the certificate that actually signs Google News (com.google.android.apps.magazines):
+// O=Google Inc., CN=Android — the Google "Android" master release cert. Verified against the
+// v2 APK signing block of the shipped APK. MicroG RE reports this signature to Google's auth
+// backend so a renamed install keeps the original package identity; a wrong value makes the
+// backend reject the token grant after login (fresh-install sign-in loop).
+private const val SPOOFED_PACKAGE_SIGNATURE = "38918a453d07199354f8b19af05ec6562ced5788"
 
 private val gmsCoreSupportResourcePatch = resourcePatch {
     execute {
@@ -111,13 +115,7 @@ private val ACTIONS = setOf(
     "com.google.android.gms.asterism.service.START",
     "com.google.android.gms.audiomodem.service.AudioModemService.START",
     "com.google.android.gms.audit.service.START",
-    // NOTE: com.google.android.gms.auth.aang.events.services.START is deliberately
-    // NOT transformed. The AANG events service (bound via getStartServiceAction() in
-    // the aang auth client) has no counterpart in MicroG RE, so rewriting it to
-    // "app.revanced.*" points the bind at a non-existent service and breaks the
-    // fresh-install account-add return flow (sign-in loops after login). Leaving it
-    // as "com.google.*" restores the behaviour of the first working releases.
-    // See regression from commit 7342da2.
+    "com.google.android.gms.auth.aang.events.services.START",
     "com.google.android.gms.auth.account.authapi.START",
     "com.google.android.gms.auth.account.authenticator.auto.service.START",
     "com.google.android.gms.auth.account.authenticator.chromeos.START",
