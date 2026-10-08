@@ -10,9 +10,7 @@ private val COMPAT = Compatibility(
     packageName = "com.ebay.kleinanzeigen",
     appIconColor = 0x2EAD33,
     targets = listOf(
-        AppTarget(version = "2026.16.1"),
-        AppTarget(version = "2026.14.2"),
-        AppTarget(version = "2026.14.0"),
+        AppTarget(version = "2026.41.0"),
     ),
 )
 
@@ -24,8 +22,9 @@ val hideAdsPatch = bytecodePatch(
     compatibleWith(COMPAT)
 
     execute {
-        // Liberty init method initializes the ad/analytics SDK.
-        // Returning early before execution prevents all ads and analytics from loading.
+        // Liberty setup method initializes ad/analytics SDKs.
+        // Inserting a return-void instruction at index 0 exits the method early before any SDKs are configured,
+        // preventing all ads and analytics from loading.
         LibertyInitFingerprint.method.addInstruction(0, "return-void")
     }
 }

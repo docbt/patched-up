@@ -3,9 +3,10 @@ package app.docbt.patched_up.kleinanzeigen.ads
 import app.morphe.patcher.Fingerprint
 
 // Liberty init method: initializes the ad/analytics SDK (Liberty SDK).
-// "KEY_LIBERTY_REFRESH_INTERVAL" is a stable string inside the init method
-// across versions: 2026.9.0 (KaLibertyConfig.initLiberty) and 2026.12.0 (liberty_config/a.c).
-// The classDef.type.contains("/Liberty;") approach broke in 2026.12.0 due to obfuscation.
+// "https://prebid-server.rubiconproject.com/openrtb2/auction" is a stable string inside the setup method
+// across versions. Restricting to `returnType == "V"` (void) ensures we target the main
+// initializer execution method rather than a configuration factory or getter.
 internal object LibertyInitFingerprint : Fingerprint(
-    strings = listOf("KEY_LIBERTY_REFRESH_INTERVAL"),
+    strings = listOf("https://prebid-server.rubiconproject.com/openrtb2/auction"),
+    custom = { method, _ -> method.returnType == "V" },
 )
