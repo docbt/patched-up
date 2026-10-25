@@ -59,6 +59,16 @@ private val gmsCoreSupportResourcePatch = resourcePatch {
                 "$GMS_CORE_VENDOR.MICROG_PACKAGE_NAME",
                 "$GMS_CORE_VENDOR.android.gms",
             )
+
+            // MicroG RE is a regular user app, so on Android 11+ package visibility hides it
+            // unless it is declared in <queries>. Without this the app cannot resolve the
+            // auth.accounts provider, sees no accounts and loops into the add-account flow.
+            val manifestNode = doc.getElementsByTagName("manifest").item(0)
+            val queriesNode = doc.getElementsByTagName("queries").item(0)
+                ?: doc.createElement("queries").also { manifestNode.insertBefore(it, applicationNode) }
+            val gmsPackage = doc.createElement("package") as Element
+            gmsPackage.setAttribute("android:name", "$GMS_CORE_VENDOR.android.gms")
+            queriesNode.appendChild(gmsPackage)
         }
     }
 }
